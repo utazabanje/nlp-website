@@ -450,6 +450,11 @@ template {
   display: none;
 }
 
-body {
-    height: 100vh;
+*{
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#map{
+  height: 350px;
 }
