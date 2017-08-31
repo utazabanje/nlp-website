@@ -2,6 +2,7 @@
   border-bottom: 10px solid $mainBlue;
   position: relative;
   overflow: hidden;
+  margin-bottom: 20px;
 
   &__image {
     background-size: cover;

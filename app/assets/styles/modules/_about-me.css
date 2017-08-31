@@ -1,0 +1,42 @@
+.about-me {
+  display: grid;
+  grid-template-columns: 1fr;
+  /* grid-template-rows: 1fr 1fr; */
+  grid-gap: 1em;
+
+  @mixin atMedium{
+    grid-template-columns: auto auto;
+    margin-top: 0;
+    padding: 18px;
+  }
+
+  @mixin atLarge{
+    padding: 30px 0 30px 0;
+  }
+
+  &__text-content{
+    padding: 2em;
+
+    @mixin atMedium{
+      padding: 1.5em;
+    }
+
+    @mixin atLarge{
+      padding: 2em;
+    }
+
+    /* background-color: rgba(47, 85, 114, 0.1); */
+  }
+
+  &__branislava {
+    margin: auto;
+  }
+
+  &__title {
+    text-align: center;
+
+    @mixin atLarge{
+      margin-top: 0;
+    }
+  }
+}
