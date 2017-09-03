@@ -529,10 +529,13 @@ template {
   text-decoration: none;
   padding: .75rem 1.2rem;
   display: inline-block;
+  margin: 1px;
 }
 
 .btn:hover{
     background-color: #2f5572;
+    border: 1px solid #2f5572;
+    margin: 0;
     color: #fff;
     -webkit-transition: background-color .7s ease-out;
     transition: background-color .7s ease-out;
@@ -540,7 +543,19 @@ template {
 
 .btn--orange {
     background-color: #d59541;
+    border: 1px solid #d59541;
+    margin: 0;
   }
+
+.btn--medium {
+    -webkit-transition: background-color .7s ease-out;
+    transition: background-color .7s ease-out;
+    padding: .6rem 1.0rem;
+    margin: 0;
+  }
+
+@media (min-width: 830px) {
+    }
 
 .btn--large {
     -webkit-transition: background-color .7s ease-out;
@@ -562,10 +577,6 @@ template {
   margin-left: auto;
   margin-right: auto;
 }
-
-.wrapper--shadow {
-    max-width: 976px;
-  }
 
 .about-me {
   display: grid;
@@ -590,7 +601,8 @@ template {
     }
 
 .about-me__text-content{
-    padding: 1em;
+    font-weight: 300;
+    padding: 1.5em;
     background-color: rgba(47, 85, 114, 0.1);
   }
 
@@ -611,14 +623,19 @@ template {
     }
 
 .about-me__branislava {
+    max-width: 100%;
     border-radius: 50%;
     margin: auto;
     display: block;
+    color: transparent;
   }
 
 .about-me__title {
     padding-bottom: .8rem;
     text-align: center;
+    font-size: 1.4em;
+    font-weight: 500;
+    color: #2f5572;
   }
 
 @media (min-width: 1200px) {
@@ -679,6 +696,7 @@ template {
     z-index: 10;
     top: 10px;
     right: 10px;
+    cursor: pointer;
   }
 
 .site-header__menu-icon::before {
@@ -830,3 +848,86 @@ template {
       background-color: transparent
   }
     }
+
+.work-section {
+  background-color: #2f5572;
+  color: #fff;
+}
+
+.my-work {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 830px) {
+
+.my-work {
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 1em;
+    margin-top: 0;
+    padding: 18px
+}
+    }
+
+@media (min-width: 1200px) {
+
+.my-work {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 1em;
+    margin-top: 0;
+    padding: 18px
+}
+    }
+
+.my-work__main-headline {
+    text-align: center;
+    padding: 1em 0 1em 0;
+    font-size: 2.55rem;
+    font-weight: 300;
+    margin: 0;
+  }
+
+.my-work__headline {
+    font-weight: 400;
+    text-align: center;
+  }
+
+.my-work__box {
+    font-weight: 300;
+    padding: 1.5em;
+  }
+
+@media (min-width: 830px) {
+
+.my-work__box {
+      padding: 1.5em;
+      background-color: transparent
+  }
+    }
+
+@media (min-width: 1200px) {
+
+.my-work__box {
+      padding: 2em;
+      background-color: transparent
+  }
+    }
+
+.icon {
+  color: #d59541;
+  text-align: center;
+}
+
+.footer {
+  background-color: #2f5572;
+  color: #fff;
+  padding: .5rem 0;
+  text-align: center; 
+  clear: both;
+}
+
+.footer__text {
+    display: inline-block;
+    margin-bottom: 1rem;
+    font-weight: 200;
+  }
