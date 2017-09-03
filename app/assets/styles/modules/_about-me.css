@@ -1,7 +1,6 @@
 .about-me {
   display: grid;
   grid-template-columns: 1fr;
-  /* grid-template-rows: 1fr 1fr; */
   grid-gap: 1em;
 
   @mixin atMedium{
@@ -15,24 +14,28 @@
   }
 
   &__text-content{
-    padding: 2em;
+    padding: 1em;
+    background-color: rgba(47, 85, 114, 0.1);
 
     @mixin atMedium{
       padding: 1.5em;
+      background-color: transparent;
     }
 
     @mixin atLarge{
       padding: 2em;
+      background-color: transparent;
     }
-
-    /* background-color: rgba(47, 85, 114, 0.1); */
   }
 
   &__branislava {
+    border-radius: 50%;
     margin: auto;
+    display: block;
   }
 
   &__title {
+    padding-bottom: .8rem;
     text-align: center;
 
     @mixin atLarge{
