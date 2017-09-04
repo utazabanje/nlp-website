@@ -6,7 +6,13 @@
   display: inline-block;
   margin: 1px;
 
-  &:hover{
+  
+  &--orange {
+    background-color: $mainOrange;
+    border: 1px solid $mainOrange;
+    margin: 0;
+
+    &:hover{
     background-color: $mainBlue;
     border: 1px solid $mainBlue;
     margin: 0;
@@ -14,11 +20,7 @@
     -webkit-transition: background-color .7s ease-out;
     -moz-transition: background-color .7s ease-out;
     transition: background-color .7s ease-out;
-  }
-  &--orange {
-    background-color: $mainOrange;
-    border: 1px solid $mainOrange;
-    margin: 0;
+    }
   }
 
   &--medium {
@@ -28,7 +30,8 @@
     padding: .6rem 1.0rem;
     margin: 0;
 
-    @mixin atMedium {
+    &:hover {
+      border: 1px solid $mainOrange;
     }
   }
 

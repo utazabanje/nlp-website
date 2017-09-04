@@ -1,13 +1,13 @@
 .footer {
   background-color: #2f5572;
   color: #fff;
-  padding: .5rem 0;
+  padding: .5rem 0 1rem 0;
   text-align: center; 
   clear: both;
 
   &__text {
     display: inline-block;
-    margin-bottom: 1rem;
+    margin-bottom: .7rem;
     font-weight: 200;
   }
 }

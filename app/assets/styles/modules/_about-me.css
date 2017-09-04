@@ -1,11 +1,17 @@
+.about-section {
+  background-color: rgba(47, 85, 114, 0.1);
+}
+
 .about-me {
   display: grid;
   grid-template-columns: 1fr;
-  grid-gap: 1em;
+  
+  
 
   @mixin atMedium{
     grid-template-columns: auto auto;
     margin-top: 0;
+    /* grid-gap: 1em; */
     padding: 18px;
   }
 
@@ -16,16 +22,13 @@
   &__text-content{
     font-weight: 300;
     padding: 1.5em;
-    background-color: rgba(47, 85, 114, 0.1);
 
     @mixin atMedium{
       padding: 1.5em;
-      background-color: transparent;
     }
 
     @mixin atLarge{
       padding: 2em;
-      background-color: transparent;
     }
   }
 
@@ -35,6 +38,7 @@
     margin: auto;
     display: block;
     color: transparent;
+    padding: 1em;
   }
 
   &__title {
