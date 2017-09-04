@@ -288,7 +288,7 @@ menu {
     left: 0;
     width: 100%;
     text-align: center;
-  }@media (min-width: 800px) {.large-hero__text-content {
+  }@media (min-width: 830px) {.large-hero__text-content {
       padding-top: 60px
   }
     }.large-hero__title {
@@ -343,7 +343,7 @@ menu {
   grid-template-columns: 1fr;
   /* grid-template-rows: 1fr 1fr; */
   grid-gap: 1em;
-}@media (min-width: 800px) {.about-me {
+}@media (min-width: 830px) {.about-me {
     grid-template-columns: auto auto;
     margin-top: 0;
     padding: 18px
@@ -355,7 +355,7 @@ menu {
     padding: 2em;
 
     /* background-color: rgba(47, 85, 114, 0.1); */
-  }@media (min-width: 800px) {.about-me__text-content{
+  }@media (min-width: 830px) {.about-me__text-content{
       padding: 1.5em
   }
     }@media (min-width: 1200px) {.about-me__text-content{
