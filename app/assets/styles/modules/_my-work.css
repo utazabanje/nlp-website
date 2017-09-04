@@ -1,3 +1,10 @@
+#work {
+
+   @mixin atMedium {
+    padding: 4.5rem 0;
+  }
+}
+
 .work-section {
   background-color: $mainBlue;
   color: #fff;

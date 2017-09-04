@@ -2,14 +2,15 @@
   position: absolute;
   width: 100%;
   z-index: 2;
-  padding: 30px 0;
+  padding: 20px 0;
   transition: background-color .5s ease-out;
+  
 
-  &--is-expanded {
-    background-color: rgba(47, 85, 114, .4);
+  @mixin atMedium {
+    position: fixed;
 
-    @mixin atMedium {
-      background-color: transparent;
+    &--dark {
+      background-color: rgba(23, 51, 72, .7);
     }
   }
 
@@ -18,13 +19,19 @@
     color: white;
     font-size: 5rem;
     top: 0;
-    padding: 15px;
+    padding: 5px;
     left: 50%;
     transform: translateX(-50%);
+    
 
     @mixin atMedium {
+      padding: 0;
       left: auto;
       transform: translateX(0);
+
+      .site-header--dark & {
+        font-size: 4rem;
+      }
     }
   }
 

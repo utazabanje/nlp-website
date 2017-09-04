@@ -29,9 +29,9 @@
       <div class="site-header__menu-content">
         <nav class="primary-nav primary-nav--pull-right">
           <ul>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#work">My Work</a></li>
-            <li><a href="#map">Contact</a></li>
+            <li><a href="#about" id="about-me-link">About Me</a></li>
+            <li><a href="#work" id="my-work-link">My Work</a></li>
+            <li><a href="#contact" id="contact-link">Contact</a></li>
           </ul>
         </nav>
       </div>
@@ -39,12 +39,12 @@
   </header>
 
   <div class="large-hero">
-      <picture>
-        <source srcset="images/large-img.jpg 1920w" media="(min-width: 1380px)">
-        <source srcset="images/medium-img.jpg 1380w" media="(min-width: 990px)">
-        <source srcset="images/small-img.jpg 990w" media="(min-width: 640px)">
-        <img srcset="images/smaller-img.jpg 640w" alt="" class="large-hero__image">
-      </picture>
+    <picture>
+      <source srcset="images/large-img.jpg 1920w" media="(min-width: 1380px)">
+      <source srcset="images/medium-img.jpg 1380w" media="(min-width: 990px)">
+      <source srcset="images/small-img.jpg 990w" media="(min-width: 640px)">
+      <img srcset="images/smaller-img.jpg 640w" alt="" class="large-hero__image">
+    </picture>
 
     <div class="large-hero__text-content">
       <div class="wrapper">
@@ -54,10 +54,11 @@
       </div>
     </div>
   </div>
-  
-<div class="about-section">
+
+
+<div id="about" class="about-section page-section" data-matching-link="#about-me-link">
   <div class="wrapper">
-    <div class="about-me" id="about">
+    <div class="about-me">
       <img class="about-me__branislava" src="images/branislava.jpg" alt="Branislava Majstorovic">
         <div class="about-me__text-content">
           <h3 class="about-me__title">Here's how I started...</h3>
@@ -75,10 +76,10 @@
    </div>
 </div>
 
-<div class="work-section">
+<div id="work" class="work-section page-section" data-matching-link="#my-work-link">
   <div class="wrapper">
     <h2 class="my-work__main-headline"><i class="icon fa fa-star fa-lg" aria-hidden="true"></i> My <strong>Work</strong></h2>
-      <div class="my-work" id="work">
+      <div class="my-work">
         <div class="my-work__box">
           <div class="icon">
             <span><i class="icon fa fa-users fa-3x" aria-hidden="true"></i></span>
@@ -142,7 +143,7 @@
   </div>
 </div>
 
-<div class="address">
+<div id="contact" class="address page-section" data-matching-link="#contact-link">
   <div class="wrapper">
     <div class="address__content">
       <div class="address__box">
