@@ -862,6 +862,16 @@ template {
   grid-template-columns: 1fr;
 }
 
+@media (min-width: 530px) {
+
+.my-work {
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 1em;
+    margin-top: 0;
+    padding: 18px
+}
+    }
+
 @media (min-width: 830px) {
 
 .my-work {
