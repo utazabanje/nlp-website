@@ -1,12 +1,17 @@
+.about-section {
+  background-color: rgba(47, 85, 114, 0.1);
+}
+
 .about-me {
   display: grid;
   grid-template-columns: 1fr;
-  /* grid-template-rows: 1fr 1fr; */
-  grid-gap: 1em;
+  
+  
 
   @mixin atMedium{
     grid-template-columns: auto auto;
     margin-top: 0;
+    /* grid-gap: 1em; */
     padding: 18px;
   }
 
@@ -15,7 +20,8 @@
   }
 
   &__text-content{
-    padding: 2em;
+    font-weight: 300;
+    padding: 1.5em;
 
     @mixin atMedium{
       padding: 1.5em;
@@ -24,16 +30,23 @@
     @mixin atLarge{
       padding: 2em;
     }
-
-    /* background-color: rgba(47, 85, 114, 0.1); */
   }
 
   &__branislava {
+    max-width: 100%;
+    border-radius: 50%;
     margin: auto;
+    display: block;
+    color: transparent;
+    padding: 1em;
   }
 
   &__title {
+    padding-bottom: .8rem;
     text-align: center;
+    font-size: 1.4em;
+    font-weight: 500;
+    color: $mainBlue;
 
     @mixin atLarge{
       margin-top: 0;

@@ -1,0 +1,47 @@
+.address {
+  text-align: center;
+  line-height: .7em;
+  background-color: rgba(47, 85, 114, 0.1);
+
+  &__content {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1em;
+    padding: 1.5em;
+    
+    @mixin atSmall {
+      grid-template-columns: 1fr 1fr 1fr;
+      padding: 1.5em;
+    }
+
+    @mixin atMedium {
+      grid-template-columns: 1fr 1fr 1fr;
+      padding: 3em;
+    }
+  }
+
+  &__box {
+    
+
+    &-text {
+      
+
+      &--h3 {
+        font-weight: 400;
+        color: $mainBlue;
+      }
+
+      &--h5 {
+        font-weight: 300;
+        margin: 0 0 1.3em 0;
+      }
+    }
+  }
+
+  &__icon{
+    border-bottom: 1px solid $mainBlue;
+    color: $mainBlue;
+    width: 100px;
+    padding-bottom: .5em;
+  }
+}

@@ -4,7 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous"> -->
 
     <title>BM NLP</title>
 
@@ -15,19 +18,20 @@
   <header class="site-header">
     <div class="wrapper">
       <div class="site-header__logo">
-        <div class="site-header__logo__graphic">BM</div>
+        <div class="site-header__logo-graphic">BM</div>
       </div>
 
       <div class="site-header__menu-icon">
         <div class="site-header__menu-icon__middle"></div>
       </div>
 
+
       <div class="site-header__menu-content">
-        <nav class="navbar-primary">
+        <nav class="primary-nav primary-nav--pull-right">
           <ul>
-            <li><a href="#about-me">About Me</a></li>
-            <li><a href="#my-work">My Work</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#work">My Work</a></li>
+            <li><a href="#map">Contact</a></li>
           </ul>
         </nav>
       </div>
@@ -39,7 +43,7 @@
         <source srcset="images/large-img.jpg 1920w" media="(min-width: 1380px)">
         <source srcset="images/medium-img.jpg 1380w" media="(min-width: 990px)">
         <source srcset="images/small-img.jpg 990w" media="(min-width: 640px)">
-        <img srcset="images/smaller-img.jpg 640w" alt="Costal view of ocen" class="large-hero__image">
+        <img srcset="images/smaller-img.jpg 640w" alt="" class="large-hero__image">
       </picture>
 
     <div class="large-hero__text-content">
@@ -51,62 +55,157 @@
     </div>
   </div>
   
-
-<div class="wrapper wrapper--medium">
-  <div class="about-me">
-      <img class="about-me__branislava" src="images/branislava-small.jpg" alt="">
-     
-      <div class="about-me__text-content">
-        <h3 class="about-me__title">Here's how I started...</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-        irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <p>Duis aute irure dolor in <strong>reprehenderit in</strong> voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-        sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor
-        sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum velit esse cillum <strong>dolore eu fugiat.</strong></p>
+<div class="about-section">
+  <div class="wrapper">
+    <div class="about-me" id="about">
+      <img class="about-me__branislava" src="images/branislava.jpg" alt="Branislava Majstorovic">
+        <div class="about-me__text-content">
+          <h3 class="about-me__title">Here's how I started...</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+          irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+          cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p>Duis aute irure dolor in <strong>reprehenderit in</strong> voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+          sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor
+          sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+          occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum velit esse cillum <strong>dolore eu fugiat.</strong></p>
+       </div>
     </div>
-  </div>
+   </div>
+</div>
 
-  <div id="my-work">
-    <img src="" alt="">
-    <h3>Something1</h3>
-    <h4>something</h4>
-    <p>&ldquo;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-    occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit
-    amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&rdquo;</p>
+<div class="work-section">
+  <div class="wrapper">
+    <h2 class="my-work__main-headline"><i class="icon fa fa-star fa-lg" aria-hidden="true"></i> My <strong>Work</strong></h2>
+      <div class="my-work" id="work">
+        <div class="my-work__box">
+          <div class="icon">
+            <span><i class="icon fa fa-users fa-3x" aria-hidden="true"></i></span>
+          </div>
+          <h3 class="my-work__headline">Something1</h3>
+          <p>&ldquo;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+          occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit
+          amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&rdquo;</p>
+      </div>
+      
+      <div class="my-work__box">
+        <div class="icon">
+          <span><i class="fa fa-medkit fa-3x" aria-hidden="true"></i></span>
+        </div>
+        <h3 class="my-work__headline">Something2</h3>
+        <p>&ldquo;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+        sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor
+        sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&rdquo;</p>
+      </div>
 
-    <img src="" alt="">
-    <h3>Something2</h3>
-    <h4>something</h4>
-    <p>&ldquo;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-    sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor
-    sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&rdquo;</p>
+      <div class="my-work__box">
+        <div class="icon">
+          <span><i class="fa fa-trophy fa-3x" aria-hidden="true"></i></span>
+        </div>
+        <h3 class="my-work__headline">Something3</h3>
+        <p>&ldquo;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+        sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum
+        dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&rdquo;</p>
+      </div>
 
-    <img src="" alt="">
-    <h3>Something3</h3>
-    <h4>something</h4>
-    <p>&ldquo;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-    sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum
-    dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&rdquo;</p>
-  </div>
+      <div class="my-work__box">
+        <div class="icon">
+          <span><i class="icon fa fa-users fa-3x " aria-hidden="true"></i></span>
+        </div>
+        <h3 class="my-work__headline">Something1</h3>
+        <p>&ldquo;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+          sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum
+          dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&rdquo;</p>
+      </div>
 
-  <div id="map">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2830.4482971080542!2d20.410125387693064!3d44.81243104054707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a6f87dbdcb295%3A0x8df9007d7431adb5!2sBulevar+Milutina+Milankovi%C4%87a!5e0!3m2!1sen!2srs!4v1503679310200"
-       width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <div class="my-work__box">
+        <div class="icon">
+          <span><i class="fa fa-medkit fa-3x" aria-hidden="true"></i></span>
+        </div>
+        <h3 class="my-work__headline">Something2</h3>
+        <p>&ldquo;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+          sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum
+          dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&rdquo;</p>
+      </div>
+
+      <div class="my-work__box">
+        <div class="icon">
+          <span><i class="fa fa-trophy fa-3x" aria-hidden="true"></i></span>
+        </div>
+        <h3 class="my-work__headline">Something3</h3>
+        <p>&ldquo;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+          sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum
+          dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&rdquo;</p>
+      </div>
+    </div>
   </div>
 </div>
 
-<footer>
+<div class="address">
   <div class="wrapper">
-    <p>Copyright &copy; 2016 Clear View Escapes. All rights reserved. <a href="#">Contact Me</a></p>
+    <div class="address__content">
+      <div class="address__box">
+        <i class="address__icon fa fa-map-o fa-lg"></i>
+        <div class="address__box-text">
+        <h3 class="address__box-text--h3"><span>ADDRESS</span></h3>
+        <h5 class="address__box-text--h5">Milutina Milankovica 120, Belgrade</h5>
+        </div>
+      </div>
+      <div class="address__box">
+        <i class="address__icon fa fa-envelope-o fa-lg"></i>
+        <div class="address__box-text">
+        <h3 class="address__box-text--h3"><span>EMAIL</span></h3>
+        <h5 class="address__box-text--h5">email@email.com</h5>
+        </div>
+      </div>
+      <div class="address__box">
+        <i class="address__icon fa fa-mobile fa-lg"></i>
+        <div class="address__box-text">
+        <h3 class="address__box-text--h3"><span>TELEPHONE</span></h3>
+        <h5 class="address__box-text--h5">+381 11 111-1111</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5660.860083858042!2d20.412302!3d44.812803!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xfd24f7d00599365c!2sFaculty+of+Dramatic+Arts!5e0!3m2!1sen!2sus!4v1488296164443"
+      width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>
+
+
+<footer class="footer">
+  <div class="wrapper">
+    <p class="footer__text">Copyright &copy; 2016 Clear View Escapes. All rights reserved.</p>
+    <a class="btn btn--orange btn--medium" href="#">Contact Me</a>
   </div>
 </footer>
 
 
-  
-
+<script src="/temp/scripts/App.js"></script>
 </body>
 </html>
+
+<!-- <div class="address__icon">
+  <i class="fa fa-map-o"></i>
+</div>
+<div class="address__text">
+  <h3><span>ADDRESS</span></h3>
+  <p>Milutina Milankovica 120, Belgrade</p>
+</div>
+<div class="address__icon">
+  <i class="fa fa-envelope-o"></i>
+</div>
+<div class="address__text">
+  <h3><span>EMAIL</span></h3>
+  <p>email@email.com</p>
+</div>
+<div class="address__icon">
+  <i class="fa fa-mobile"></i>
+</div>
+<div class="address__text">
+  <h3><span>TELEPHONE</span></h3>
+  <p>+381 11 111-1111</p>
+</div> -->

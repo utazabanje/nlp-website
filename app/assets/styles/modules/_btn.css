@@ -4,16 +4,35 @@
   text-decoration: none;
   padding: .75rem 1.2rem;
   display: inline-block;
+  margin: 1px;
 
-  &:hover{
+  
+  &--orange {
+    background-color: $mainOrange;
+    border: 1px solid $mainOrange;
+    margin: 0;
+
+    &:hover{
     background-color: $mainBlue;
+    border: 1px solid $mainBlue;
+    margin: 0;
     color: #fff;
     -webkit-transition: background-color .7s ease-out;
     -moz-transition: background-color .7s ease-out;
     transition: background-color .7s ease-out;
+    }
   }
-  &--orange {
-    background-color: $mainOrange;
+
+  &--medium {
+    -webkit-transition: background-color .7s ease-out;
+    -moz-transition: background-color .7s ease-out;
+    transition: background-color .7s ease-out;
+    padding: .6rem 1.0rem;
+    margin: 0;
+
+    &:hover {
+      border: 1px solid $mainOrange;
+    }
   }
 
   &--large {

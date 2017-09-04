@@ -1,0 +1,56 @@
+.work-section {
+  background-color: $mainBlue;
+  color: #fff;
+}
+
+.my-work {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  @mixin atMedium {
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 1em;
+    margin-top: 0;
+    padding: 18px;
+  }
+
+  @mixin atLarge{
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 1em;
+    margin-top: 0;
+    padding: 18px;
+  }
+
+  &__main-headline {
+    text-align: center;
+    padding: 1em 0 1em 0;
+    font-size: 2.55rem;
+    font-weight: 300;
+    margin: 0;
+  }
+
+  &__headline {
+    font-weight: 400;
+    text-align: center;
+  }
+
+  &__box {
+    font-weight: 300;
+    padding: 1.5em;
+
+  @mixin atMedium{
+      padding: 1.5em;
+      background-color: transparent;
+    }
+
+    @mixin atLarge{
+      padding: 2em;
+      background-color: transparent;
+    }
+  }
+}
+
+.icon {
+  color: $mainOrange;
+  text-align: center;
+}
