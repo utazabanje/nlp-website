@@ -2,6 +2,7 @@
   text-align: center;
   line-height: .7em;
   background-color: rgba(47, 85, 114, 0.1);
+  padding: 2em 0;
 
   &__content {
     display: grid;
